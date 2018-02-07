@@ -13899,7 +13899,7 @@ object-assign
       ;(0, _globalize2.default)(_globalize4.default)
 
       var demoRoot =
-        'https://github.com/intljusticemission/react-big-calendar/tree/master/examples/demos'
+        'https://github.com/jnarwold/react-big-calendar/tree/master/examples/demos'
 
       var Example = (function(_React$Component) {
         _inherits(Example, _React$Component)
@@ -13994,8 +13994,7 @@ object-assign
                     'a',
                     {
                       target: '_blank',
-                      href:
-                        'https://github.com/intljusticemission/react-big-calendar',
+                      href: 'https://github.com/jnarwold/react-big-calendar',
                     },
                     _react2.default.createElement('i', {
                       className: 'fa fa-github',
@@ -19574,7 +19573,7 @@ object-assign
               className: 'jsx',
               dangerouslySetInnerHTML: {
                 __html:
-                  '<span class="token keyword">import</span> BigCalendar <span class="token keyword">from</span> <span class="token string">\'react-big-calendar\'</span>\n<span class="token keyword">import</span> moment <span class="token keyword">from</span> <span class="token string">\'moment\'</span>\n\n<span class="token comment">// Setup the localizer by providing the moment (or globalize) Object</span>\n<span class="token comment">// to the correct localizer.</span>\nBigCalendar<span class="token punctuation">.</span><span class="token function">momentLocalizer</span><span class="token punctuation">(</span>moment<span class="token punctuation">)</span> <span class="token comment">// or globalizeLocalizer</span>\n\n<span class="token keyword">const</span> <span class="token function-variable function">MyCalendar</span> <span class="token operator">=</span> props <span class="token operator">=></span> <span class="token punctuation">(</span>\n  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>\n    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BigCalendar</span>\n      <span class="token attr-name">events</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>myEventsList<span class="token punctuation">}</span></span>\n      <span class="token attr-name">startAccessor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>start<span class="token punctuation">"</span></span>\n      <span class="token attr-name">endAccessor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>end<span class="token punctuation">"</span></span>\n    <span class="token punctuation">/></span></span>\n  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>\n<span class="token punctuation">)</span>',
+                  '<span class="token keyword">import</span> BigCalendar <span class="token keyword">from</span> <span class="token string">\'jnarwold-react-big-calendar\'</span>\n<span class="token keyword">import</span> moment <span class="token keyword">from</span> <span class="token string">\'moment\'</span>\n\n<span class="token comment">// Setup the localizer by providing the moment (or globalize) Object</span>\n<span class="token comment">// to the correct localizer.</span>\nBigCalendar<span class="token punctuation">.</span><span class="token function">momentLocalizer</span><span class="token punctuation">(</span>moment<span class="token punctuation">)</span> <span class="token comment">// or globalizeLocalizer</span>\n\n<span class="token keyword">const</span> <span class="token function-variable function">MyCalendar</span> <span class="token operator">=</span> props <span class="token operator">=></span> <span class="token punctuation">(</span>\n  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>\n    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BigCalendar</span>\n      <span class="token attr-name">events</span><span class="token script language-javascript"><span class="token punctuation">=</span><span class="token punctuation">{</span>myEventsList<span class="token punctuation">}</span></span>\n      <span class="token attr-name">startAccessor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>start<span class="token punctuation">"</span></span>\n      <span class="token attr-name">endAccessor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>end<span class="token punctuation">"</span></span>\n    <span class="token punctuation">/></span></span>\n  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>\n<span class="token punctuation">)</span>',
               },
             })
           ),
@@ -46715,9 +46714,11 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _events = __webpack_require__(18)
 
@@ -46727,20 +46728,23 @@ object-assign
         return obj && obj.__esModule ? obj : { default: obj }
       }
 
-      var allViews = Object.keys(_reactBigCalendar2.default.Views).map(function(
-        k
-      ) {
-        return _reactBigCalendar2.default.Views[k]
-      })
+      var allViews = Object.keys(_jnarwoldReactBigCalendar2.default.Views).map(
+        function(k) {
+          return _jnarwoldReactBigCalendar2.default.Views[k]
+        }
+      )
 
       var Basic = function Basic() {
-        return _react2.default.createElement(_reactBigCalendar2.default, {
-          events: _events2.default,
-          views: allViews,
-          step: 60,
-          showMultiDayTimes: true,
-          defaultDate: new Date(2015, 3, 1),
-        })
+        return _react2.default.createElement(
+          _jnarwoldReactBigCalendar2.default,
+          {
+            events: _events2.default,
+            views: allViews,
+            step: 60,
+            showMultiDayTimes: true,
+            defaultDate: new Date(2015, 3, 1),
+          }
+        )
       }
 
       exports.default = Basic
@@ -56525,9 +56529,11 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _events = __webpack_require__(18)
 
@@ -56546,7 +56552,7 @@ object-assign
             { className: 'callout' },
             'Click an event to see more info, or drag the mouse over the calendar to select a date/time range.'
           ),
-          _react2.default.createElement(_reactBigCalendar2.default, {
+          _react2.default.createElement(_jnarwoldReactBigCalendar2.default, {
             selectable: true,
             events: _events2.default,
             defaultView: 'week',
@@ -56583,9 +56589,11 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _events = __webpack_require__(18)
 
@@ -56699,7 +56707,7 @@ object-assign
                 })
               )
             ),
-            _react2.default.createElement(_reactBigCalendar2.default, {
+            _react2.default.createElement(_jnarwoldReactBigCalendar2.default, {
               rtl: rtl,
               events: _events2.default,
               culture: this.state.culture,
@@ -57777,9 +57785,11 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _events = __webpack_require__(18)
 
@@ -57798,7 +57808,7 @@ object-assign
             { className: 'callout' },
             'Click the "+x more" link on any calendar day that cannot fit all the days events to see an inline popup of all the events.'
           ),
-          _react2.default.createElement(_reactBigCalendar2.default, {
+          _react2.default.createElement(_jnarwoldReactBigCalendar2.default, {
             popup: true,
             events: _events2.default,
             defaultDate: new Date(2015, 3, 1),
@@ -57821,9 +57831,11 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _events = __webpack_require__(18)
 
@@ -57879,19 +57891,22 @@ object-assign
       }
 
       var Rendering = function Rendering() {
-        return _react2.default.createElement(_reactBigCalendar2.default, {
-          events: _events2.default,
-          defaultDate: new Date(2015, 3, 1),
-          defaultView: 'agenda',
-          dayPropGetter: customDayPropGetter,
-          slotPropGetter: customSlotPropGetter,
-          components: {
-            event: Event,
-            agenda: {
-              event: EventAgenda,
+        return _react2.default.createElement(
+          _jnarwoldReactBigCalendar2.default,
+          {
+            events: _events2.default,
+            defaultDate: new Date(2015, 3, 1),
+            defaultView: 'agenda',
+            dayPropGetter: customDayPropGetter,
+            slotPropGetter: customSlotPropGetter,
+            components: {
+              event: Event,
+              agenda: {
+                event: EventAgenda,
+              },
             },
-          },
-        })
+          }
+        )
       }
 
       exports.default = Rendering
@@ -57931,9 +57946,11 @@ object-assign
 
       var _events2 = _interopRequireDefault(_events)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _localizer = __webpack_require__(6)
 
@@ -58030,10 +58047,10 @@ object-assign
 
       MyWeek.navigate = function(date, action) {
         switch (action) {
-          case _reactBigCalendar2.default.Navigate.PREVIOUS:
+          case _jnarwoldReactBigCalendar2.default.Navigate.PREVIOUS:
             return _dateArithmetic2.default.add(date, -1, 'week')
 
-          case _reactBigCalendar2.default.Navigate.NEXT:
+          case _jnarwoldReactBigCalendar2.default.Navigate.NEXT:
             return _dateArithmetic2.default.add(date, 1, 'week')
 
           default:
@@ -58049,12 +58066,15 @@ object-assign
       }
 
       var CustomView = function CustomView() {
-        return _react2.default.createElement(_reactBigCalendar2.default, {
-          events: _events2.default,
-          defaultDate: new Date(2015, 3, 1),
-          views: { month: true, week: MyWeek },
-          test: 'io',
-        })
+        return _react2.default.createElement(
+          _jnarwoldReactBigCalendar2.default,
+          {
+            events: _events2.default,
+            defaultDate: new Date(2015, 3, 1),
+            views: { month: true, week: MyWeek },
+            test: 'io',
+          }
+        )
       }
 
       exports.default = CustomView
@@ -58072,19 +58092,21 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       function _interopRequireDefault(obj) {
         return obj && obj.__esModule ? obj : { default: obj }
       }
 
-      var allViews = Object.keys(_reactBigCalendar2.default.Views).map(function(
-        k
-      ) {
-        return _reactBigCalendar2.default.Views[k]
-      })
+      var allViews = Object.keys(_jnarwoldReactBigCalendar2.default.Views).map(
+        function(k) {
+          return _jnarwoldReactBigCalendar2.default.Views[k]
+        }
+      )
       var events = [
         {
           id: 0,
@@ -58124,16 +58146,19 @@ object-assign
       ]
 
       var Resource = function Resource() {
-        return _react2.default.createElement(_reactBigCalendar2.default, {
-          events: events,
-          defaultView: 'day',
-          views: ['day', 'work_week'],
-          step: 60,
-          defaultDate: new Date(2018, 0, 29),
-          resources: resourceMap,
-          resourceIdAccessor: 'resourceId',
-          resourceTitleAccessor: 'resourceTitle',
-        })
+        return _react2.default.createElement(
+          _jnarwoldReactBigCalendar2.default,
+          {
+            events: events,
+            defaultView: 'day',
+            views: ['day', 'work_week'],
+            step: 60,
+            defaultDate: new Date(2018, 0, 29),
+            resources: resourceMap,
+            resourceIdAccessor: 'resourceId',
+            resourceTitleAccessor: 'resourceTitle',
+          }
+        )
       }
 
       exports.default = Resource
@@ -58151,9 +58176,11 @@ object-assign
 
       var _react2 = _interopRequireDefault(_react)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _events = __webpack_require__(18)
 
@@ -58164,13 +58191,16 @@ object-assign
       }
 
       var Timeslots = function Timeslots() {
-        return _react2.default.createElement(_reactBigCalendar2.default, {
-          events: _events2.default,
-          step: 15,
-          timeslots: 8,
-          defaultView: 'week',
-          defaultDate: new Date(2015, 3, 12),
-        })
+        return _react2.default.createElement(
+          _jnarwoldReactBigCalendar2.default,
+          {
+            events: _events2.default,
+            step: 15,
+            timeslots: 8,
+            defaultView: 'week',
+            defaultDate: new Date(2015, 3, 12),
+          }
+        )
       }
 
       exports.default = Timeslots
@@ -58212,9 +58242,11 @@ object-assign
 
       var _reactDnd = __webpack_require__(30)
 
-      var _reactBigCalendar = __webpack_require__(10)
+      var _jnarwoldReactBigCalendar = __webpack_require__(10)
 
-      var _reactBigCalendar2 = _interopRequireDefault(_reactBigCalendar)
+      var _jnarwoldReactBigCalendar2 = _interopRequireDefault(
+        _jnarwoldReactBigCalendar
+      )
 
       var _dragAndDrop = __webpack_require__(439)
 
@@ -58265,7 +58297,7 @@ object-assign
       }
 
       var DragAndDropCalendar = (0, _dragAndDrop2.default)(
-        _reactBigCalendar2.default
+        _jnarwoldReactBigCalendar2.default
       )
 
       var Dnd = (function(_React$Component) {
