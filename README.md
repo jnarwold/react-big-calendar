@@ -36,7 +36,7 @@ Regardless of your choice, you **must** choose a localizer to use this library:
 #### Moment.js
 
 ```js
-import BigCalendar from 'react-big-calendar'
+import BigCalendar from 'jnarwold-react-big-calendar'
 import moment from 'moment'
 
 BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment))
@@ -45,7 +45,7 @@ BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment))
 #### Globalize.js v0.1.1
 
 ```js
-import BigCalendar from 'react-big-calendar'
+import BigCalendar from 'jnarwold-react-big-calendar'
 import globalize from 'globalize'
 
 BigCalendar.setLocalizer(BigCalendar.globalizeLocalizer(globalize))

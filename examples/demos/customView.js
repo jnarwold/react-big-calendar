@@ -2,7 +2,7 @@ import React from 'react'
 
 import dates from 'date-arithmetic'
 import events from '../events'
-import BigCalendar from 'react-big-calendar'
+import BigCalendar from 'jnarwold-react-big-calendar'
 import localizer from 'react-big-calendar/lib/localizer'
 import TimeGrid from 'react-big-calendar/lib/TimeGrid'
 

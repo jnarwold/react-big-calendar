@@ -4,7 +4,7 @@ import Intro from './Intro.md'
 import cn from 'classnames'
 import { render } from 'react-dom'
 
-import localizer from 'react-big-calendar/lib/localizers/globalize'
+import localizer from 'jnarwold-react-big-calendar/lib/localizers/globalize'
 import globalize from 'globalize'
 
 localizer(globalize)
@@ -12,7 +12,7 @@ localizer(globalize)
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 
-import 'react-big-calendar/lib/less/styles.less'
+import 'jnarwold-react-big-calendar/lib/less/styles.less'
 import './styles.less'
 import './prism.less'
 import Basic from './demos/basic'
@@ -26,7 +26,7 @@ import Timeslots from './demos/timeslots'
 import Dnd from './demos/dnd'
 
 let demoRoot =
-  'https://github.com/intljusticemission/react-big-calendar/tree/master/examples/demos'
+  'https://github.com/jnarwold/react-big-calendar/tree/master/examples/demos'
 
 class Example extends React.Component {
   state = { selected: 'basic' }
@@ -64,7 +64,7 @@ class Example extends React.Component {
               {' | '}
               <a
                 target="_blank"
-                href="https://github.com/intljusticemission/react-big-calendar"
+                href="https://github.com/jnarwold/react-big-calendar"
               >
                 <i className="fa fa-github" /> github
               </a>

@@ -1,5 +1,5 @@
 import React from 'react'
-import BigCalendar from 'react-big-calendar'
+import BigCalendar from 'jnarwold-react-big-calendar'
 
 let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
 const events = [

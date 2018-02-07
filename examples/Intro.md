@@ -17,7 +17,7 @@ Choose the localizer that best suits your needs, or write your own. Whatever you
 before you can use the calendar (you only need to set it up once).
 
 ```jsx
-import BigCalendar from 'react-big-calendar'
+import BigCalendar from 'jnarwold-react-big-calendar'
 import moment from 'moment'
 
 // Setup the localizer by providing the moment (or globalize) Object

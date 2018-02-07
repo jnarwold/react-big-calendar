@@ -19,8 +19,10 @@ module.exports = {
 
   resolve: {
     alias: {
-      'react-big-calendar$': path.resolve(__dirname + '/../src/index.js'),
-      'react-big-calendar/lib': path.resolve(__dirname, '../src'),
+      'jnarwold-react-big-calendar$': path.resolve(
+        __dirname + '/../src/index.js'
+      ),
+      'jnarwold-react-big-calendar/lib': path.resolve(__dirname, '../src'),
     },
   },
   module: {
